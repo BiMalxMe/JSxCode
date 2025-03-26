@@ -1,0 +1,17 @@
+<script>
+    function sumFinder(){
+        const num1=document.getElementById('firstnumber').value
+        const num2=document.getElementById('secondnumber').value
+        const puton=document.getElementById('finalSum')
+        puton.innerText=parseInt(num1)+parseInt(num2)
+        }
+</script>
+<body>
+<input type="text" placeholder="Enter a first number" id="firstnumber"><br></br>
+<input type="text" placeholder="Enter a second number" id="secondnumber"><br></br>
+<button onclick="sumFinder()">Calculate Sum</button><br></br>
+<div id="finalSum"></div>
+</body>
+
+
+<!-- oninput="sumFinder()" to call the function irrespective of a function -->

@@ -1,0 +1,5 @@
+const mongoose=require('mongoose')
+mongoose.connect('mongodb+srv://journeyxbimal:papa9814479922@cluster0.vbila.mongodb.net/newlatest')
+const User=mongoose.model('Users',{name: String,email:String,password:String})
+const user=new User({name:'Bimal chalise',email:"bimalcgalise123@gmail.com",password:'123'})
+user.save().then(console.log("All Done"))

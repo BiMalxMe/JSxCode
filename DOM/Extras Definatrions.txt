@@ -1,0 +1,13 @@
+	So what actually is debouncing?
+==>  Debouncing is the process user to let type until the pace becomes slow
+so that multiple requests doesnot goes to the backend to overcome the load
+on the backend server
+
+
+
+let timeout;
+function debouncePopulateDiv(){
+clearTimeout(timeout);
+timeout=setTimeout(function){
+populateDiv()
+},100);
